@@ -95,7 +95,7 @@ const GameArea: React.FC<GameAreaProps> = ({
 
                                 </span>
                             </div>
-                            <a href="/"
+                            <a href="http://gamehome.fun"
                                 className="px-4 py-2 bg-yellow-500 text-white rounded">
                                 MORE GAMES
                             </a>
