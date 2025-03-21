@@ -8,25 +8,26 @@ export default {
       layout: 'raw'
     }
   },
+  "baseball-kid-pitcher-cup": {
+    type: 'page',
+    title: 'Baseball Kid Pitcher Cup',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
+  "baseball-pro": {
+    type: 'page',
+    title: 'Baseball Pro',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
   // docs: {
   //   type: 'page',
   //   title: 'Documentation'
   // },
-  tags: {
-    display: "children",
-    theme: {
-      layout: "raw",
-    },
-  },
-  blog: {
-    type: "page",
-    title: "Blog",
-    theme: {
-      layout: "raw",
-      typesetting: "article",
-      timestamp: false,
-    }
-  },
   concat: {
     type: 'page',
     title: 'Concat',

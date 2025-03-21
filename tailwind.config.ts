@@ -1,3 +1,4 @@
+import { yellow } from '@mui/material/colors'
 import type { Config } from 'tailwindcss'
 
 export default {
@@ -14,8 +15,8 @@ export default {
     extend: {
       colors: {
         primary: {
-          DEFAULT: "#0077cc",
-          light: "#0099ff",
+          DEFAULT: yellow[600],
+          light: yellow[500],
           dark: "#0055aa",
           500: "#0077cc",
         },
@@ -23,7 +24,8 @@ export default {
         black: "#1b1b1b",
       },
       fontFamily: {
-        catamaran: ['Catamaran', 'sans-serif']
+        catamaran: ['Catamaran', 'sans-serif'],
+        cartoon: ["Bangers", "Luckiest Guy", "Comic Sans MS", "sans-serif"]
       }
     }
   },

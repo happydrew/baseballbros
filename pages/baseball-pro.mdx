@@ -1,0 +1,32 @@
+---
+title: Baseball Pro
+description: Baseball Pro is a free-to-play online game that teaches players the basics of baseball.
+date: 2025-02-15
+---
+
+import GamePage from '@components/games/GamePage';
+import Article from '@components/games/Article_BaseballPro';
+  
+<GamePage 
+    main_game={{
+    name: "Baseball Pro",
+    iframe_url: "https://www.ilibrarian.net/games/baseball-pro/index.html",
+    votes: 2528,
+    score: 4.6
+}} 
+    left_side_games={[
+    {
+        name: "Baseball Bros IO",
+        href: "/",
+        image: "/assets/images/games/baseball-bros-io.png"
+    }
+    ]}
+    right_side_games={[
+    {
+        name: "Baseball Kid Pitcher Cup",
+        href: "/baseball-kid-pitcher-cup",
+        image: "/assets/images/games/baseball-kid-pitcher-cup.png"
+    }
+    ]}
+    Article={Article}
+ />

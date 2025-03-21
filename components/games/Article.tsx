@@ -1,226 +1,306 @@
-const Article = () => {
+// components/ArticleContent.tsx
+import React from 'react';
+
+const Article: React.FC = () => {
     return (
-        <div className="min-h-screen text-zinc-900 bg-zinc-900 flex justify-center px-4 py-8">
-            <div className="max-w-5xl bg-white rounded-xl shadow-md p-8">
-                {/* 标题 */}
-                <h1 className="text-3xl font-extrabold mb-6 leading-tight">
-                    Play Baseball Bros IO - The Ultimate Baseball Bros Game Experience
-                </h1>
-
-                <a
-                    href="https://gamehome.fun"
-                    className="underline text-white font-bold py-2 px-4 rounded"
+        <article className="max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-md leading-8">
+            {/* Header */}
+            <header className="mb-8">
+                <h1
+                    className="text-2xl md:text-3xl font-extrabold text-center text-red-700 mb-4 font-cartoon"
                 >
-                    More Games
-                </a>
-
-                {/* 简介 */}
-                <h2 className="text-2xl font-bold mb-4">Introduction</h2>
-                <p className="text-lg leading-relaxed mb-6">
-                    Welcome to <strong>Baseball Bros IO</strong>, the online sensation that
-                    redefines your baseball gaming experience! This innovative{" "}
-                    <strong>baseball bros game</strong> offers a perfect blend of classic
-                    baseball charm with modern, fast-paced action. Whether you’re looking
-                    for quick matches or a deeper strategic challenge, Baseball Bros IO
-                    has it all.
+                    Baseball Bros IO: Your Gateway to a Legendary Baseball Experience
+                </h1>
+                <p className="text-lg text-gray-700 text-justify">
+                    Discover Baseball Bros IO, a fast-paced, easy-to-learn, and incredibly fun baseball bros game that perfectly blends the classic American sport with competitive multiplayer action. As the 2025 MLB season heats up, this game offers baseball enthusiasts a top-notch virtual battleground. In this comprehensive guide, we introduce every aspect of Baseball Bros IO to help you get started quickly and enjoy endless fun.
                 </p>
+            </header>
 
-                {/* 游戏背景 */}
-                <h2 className="text-2xl font-bold mb-4">Game Background</h2>
-                <p className="text-lg leading-relaxed mb-6">
-                    <strong>Baseball Bros IO</strong> has quickly carved out a niche in
-                    the world of H5 sports games. With its immersive gameplay and diverse
-                    game modes, it captures the excitement of real baseball. The game
-                    invites players to step up to the plate, manage their team through
-                    intense franchise battles, and engage in thrilling online multiplayer
-                    matches—all without any downloads.
+            {/* Game Overview & Key Features */}
+            <section className="mb-8">
+                <h2
+                    className="text-2xl font-bold text-red-600 mb-4 font-cartoon"
+                >
+                    Game Overview &amp; Key Features
+                </h2>
+                <h3
+                    className="text-xl font-semibold text-red-500 mb-2 font-cartoon"
+                >
+                    A Unique Take on Baseball
+                </h3>
+                <p className="mb-4 text-gray-800">
+                    Baseball Bros IO is a baseball bros game that has quickly won hearts with its straightforward controls and dynamic match experience. Staying true to the basic rules of baseball, players switch between offense and defense – hitting home runs, strategically running the bases to score, and thwarting opponents’ scoring attempts.
                 </p>
-
-                {/* 游戏玩法 */}
-                <h2 className="text-2xl font-bold mb-4">How to Play</h2>
-                <h3 className="text-xl font-semibold mb-2">Getting Started</h3>
-                <p className="text-lg leading-relaxed mb-4">
-                    To jump into the action:
-                </p>
-                <ul className="list-disc list-inside mb-6">
-                    <li className="mb-2">
-                        <strong>Visit the game website</strong>: Simply open Baseball Bros
-                        IO in your browser.
+                <h3
+                    className="text-xl font-semibold text-red-500 mb-2 font-cartoon"
+                >
+                    Distinctive Gameplay Elements
+                </h3>
+                <ul className="list-disc list-inside text-gray-800 space-y-2 mb-4">
+                    <li>
+                        <span className="font-bold">Balanced Simplicity &amp; Strategy:</span> While the controls are simple and accessible, the game packs plenty of "crazy hijinks" that keep each match unpredictable and entertaining. This design ensures that both newcomers and seasoned baseball fans find plenty to enjoy.
                     </li>
-                    <li className="mb-2">
-                        <strong>Select Your Mode</strong>: Choose from multiple modes:
-                        <ul className="list-disc list-inside ml-6 mt-2">
-                            <li className="mb-1">
-                                <strong>Quick Play</strong>: Ideal for a fast,
-                                adrenaline-filled match.
-                            </li>
-                            <li className="mb-1">
-                                <strong>Franchise Mode</strong>: Manage your team across a
-                                season and outwit challenging opponents.
-                            </li>
-                            <li className="mb-1">
-                                <strong>2 Players Same PC</strong>: Enjoy competitive play with
-                                a friend on the same device.
-                            </li>
-                            <li className="mb-1">
-                                <strong>Online VS Friends</strong>: Battle against players from
-                                around the globe.
-                            </li>
-                        </ul>
+                    <li>
+                        <span className="font-bold">Cartoon-Style Visuals &amp; Relaxed Atmosphere:</span> Unlike traditional baseball games, Baseball Bros IO uses a fun, cartoonish art style and a relaxed vibe that minimizes the learning curve while preserving the sport’s core strategic elements. This inclusive style attracts a wide range of players and keeps the game lighthearted and engaging.
                     </li>
                 </ul>
+            </section>
 
-                <h3 className="text-xl font-semibold mb-2">Game Controls and Mechanics</h3>
-                <p className="text-lg leading-relaxed mb-4">
-                    Control your player effortlessly using the arrow keys or WASD. The{" "}
-                    <strong>space bar</strong> is your go-to for:
+            {/* Team Attributes & Customization Options */}
+            <section className="mb-8">
+                <h2
+                    className="text-2xl font-bold text-red-600 mb-4 font-cartoon"
+                >
+                    Team Attributes &amp; Customization Options
+                </h2>
+                <h3
+                    className="text-xl font-semibold text-red-500 mb-2 font-cartoon"
+                >
+                    Diverse Team Stats
+                </h3>
+                <p className="mb-4 text-gray-800">
+                    Every team in Baseball Bros IO comes with its own set of attributes, including pitching speed, ball trajectory, running speed, batting power, and defensive skills. Tailor your choice to match your play style, adding an extra layer of strategy and replayability.
                 </p>
-                <ul className="list-disc list-inside mb-4 ml-6">
-                    <li className="mb-2">
-                        <strong>Batting</strong>: Time your swings perfectly to hit home
-                        runs or strategically placed shots.
+                <h3
+                    className="text-xl font-semibold text-red-500 mb-2 font-cartoon"
+                >
+                    Personalized Customization
+                </h3>
+                <p className="mb-4 text-gray-800">
+                    Enhance your experience with rich customization options:
+                </p>
+                <ul className="list-disc list-inside text-gray-800 space-y-2">
+                    <li>Change the colors and styles of hats, shirts, gloves, and shorts.</li>
+                    <li>Create a unique team identity that boosts both your game experience and team spirit.</li>
+                </ul>
+            </section>
+
+            {/* Detailed Game Modes */}
+            <section className="mb-8">
+                <h2
+                    className="text-2xl font-bold text-red-600 mb-4 font-cartoon"
+                >
+                    Detailed Game Modes
+                </h2>
+                <ul className="list-decimal list-inside text-gray-800 space-y-4">
+                    <li>
+                        <span className="font-bold">Quick Play:</span> Ideal for beginners and players short on time, the Quick Play mode lets you jump straight into the action without tedious setup. Experience the core elements of hitting, base running, and defense right away.
                     </li>
-                    <li className="mb-2">
-                        <strong>Fielding</strong>: Coordinate with your teammates to make
-                        critical catches and stops.
+                    <li>
+                        <span className="font-bold">Franchise Mode:</span> Step into the shoes of a team owner and manager in Franchise Mode. Over a 20-game season, lead your team to claim the coveted Bros Series championship. As the competition intensifies, detailed match stats (including scores, hits, home runs, errors, and strikeouts) help you refine your strategy.
+                    </li>
+                    <li>
+                        <span className="font-bold">2 Players on the Same PC:</span> Perfect for face-to-face competition, this mode lets two players battle it out on the same computer, delivering an authentic and social baseball showdown.
+                    </li>
+                    <li>
+                        <span className="font-bold">Online VS Friends:</span> Break the geographical barriers by creating or joining private rooms to play against friends online. Enjoy real-time, seamless gameplay that connects you with baseball bros enthusiasts around the world.
                     </li>
                 </ul>
-                <p className="text-lg leading-relaxed mb-6">
-                    Alternate between offensive and defensive plays as you:
-                </p>
-                <ul className="list-disc list-inside mb-6 ml-6">
-                    <li className="mb-2">
-                        <strong>Run the Bases</strong>: Navigate the diamond strategically
-                        to score.
+            </section>
+
+            {/* Controls & Gameplay Guide */}
+            <section className="mb-8">
+                <h2
+                    className="text-2xl font-bold text-red-600 mb-4 font-cartoon"
+                >
+                    Controls &amp; Gameplay Guide
+                </h2>
+                <h3
+                    className="text-xl font-semibold text-red-500 mb-2"
+                >
+                    Basic Controls
+                </h3>
+                <ul className="list-disc list-inside text-gray-800 space-y-2 mb-4">
+                    <li>
+                        <span className="font-bold">Movement:</span> Use arrow keys or WASD to navigate your character.
                     </li>
-                    <li className="mb-2">
-                        <strong>Field Efficiently</strong>: Prevent your opponents from
-                        gaining the upper hand by making smart plays.
+                    <li>
+                        <span className="font-bold">Actions:</span> The spacebar triggers various actions like pitching, sliding, jumping, or changing direction during a run.
+                    </li>
+                    <li>
+                        <span className="font-bold">Mouse Interaction:</span> In some versions, the left mouse button is used for hitting and in-game interactions.
                     </li>
                 </ul>
-
-                {/* 游戏攻略与技巧 */}
-                <h2 className="text-2xl font-bold mb-4">Game Strategy and Tips</h2>
-                <p className="text-lg leading-relaxed mb-6">
-                    Mastering <strong>Baseball Bros IO</strong> requires a mix of quick
-                    reflexes and strategic planning:
-                </p>
-                <ul className="list-disc list-inside mb-6 ml-6">
-                    <li className="mb-2">
-                        <strong>Perfect Your Swing</strong>: Focus on timing to secure those
-                        powerful home runs.
+                <h3
+                    className="text-xl font-semibold text-red-500 mb-2 font-cartoon"
+                >
+                    Offensive Play
+                </h3>
+                <ul className="list-disc list-inside text-gray-800 space-y-2 mb-4">
+                    <li>
+                        <span className="font-bold">Timing is Everything:</span> Master the right moment to hit, accurately gauging the speed and trajectory of the pitch.
                     </li>
-                    <li className="mb-2">
-                        <strong>Smart Base Running</strong>: Use your momentum to navigate
-                        the bases while keeping an eye on your opponents.
+                    <li>
+                        <span className="font-bold">Strategic Running:</span> After a successful hit, use the spacebar to change directions and run the bases.
                     </li>
-                    <li className="mb-2">
-                        <strong>Balanced Gameplay</strong>: Prioritize both scoring runs and
-                        thwarting your opponent’s advances.
-                    </li>
-                    <li className="mb-2">
-                        <strong>Practice Different Modes</strong>: Hone your skills in Quick
-                        Play or local multiplayer before tackling the challenging Franchise
-                        Mode.
+                    <li>
+                        <span className="font-bold">Aim for the Home Run:</span> While a home run is the ideal outcome, adapt your strategy based on the opponent’s defense.
                     </li>
                 </ul>
-
-                {/* 游戏特色 */}
-                <h2 className="text-2xl font-bold mb-4">Features and Unique Selling Points</h2>
-                <p className="text-lg leading-relaxed mb-6">
-                    <strong>Baseball Bros IO</strong> stands out with its dynamic features:
-                </p>
-                <ul className="list-disc list-inside mb-6 ml-6">
-                    <li className="mb-2">
-                        <strong>Vibrant, Engaging Graphics</strong>: Enjoy colorful visuals
-                        that breathe life into every match.
+                <h3
+                    className="text-xl font-semibold text-red-500 mb-2 font-cartoon"
+                >
+                    Defensive Play
+                </h3>
+                <ul className="list-disc list-inside text-gray-800 space-y-2">
+                    <li>
+                        <span className="font-bold">Fielding Skills:</span> Control your players to catch fly balls or intercept grounders.
                     </li>
-                    <li className="mb-2">
-                        <strong>Intuitive, Responsive Controls</strong>: Jump right into the
-                        action with easy-to-learn controls.
+                    <li>
+                        <span className="font-bold">Coordinated Passing:</span> Use the spacebar to make precise passes to teammates.
                     </li>
-                    <li className="mb-2">
-                        <strong>Diverse Game Modes</strong>: From quick matches to detailed
-                        franchise management, there’s a mode for every player.
-                    </li>
-                    <li className="mb-2">
-                        <strong>Competitive Multiplayer</strong>: Test your skills against
-                        friends and players worldwide.
-                    </li>
-                    <li className="mb-2">
-                        <strong>Regular Updates</strong>: Continuous improvements and fresh
-                        features ensure the game remains exciting.
+                    <li>
+                        <span className="font-bold">Positioning:</span> Strategically position your players to block opponents’ base-running paths.
                     </li>
                 </ul>
+            </section>
 
-                {/* 用户评价 */}
-                <h2 className="text-2xl font-bold mb-4">User Reviews and Testimonials</h2>
-                <blockquote className="border-l-4 border-gray-400 pl-4 italic text-lg leading-relaxed mb-4">
-                    "An addictive game that perfectly blends the thrill of baseball with
-                    innovative gameplay. I can't stop playing!"
-                    <br />— <em>Satisfied Player</em>
-                </blockquote>
-                <blockquote className="border-l-4 border-gray-400 pl-4 italic text-lg leading-relaxed mb-6">
-                    "The controls are intuitive and the strategy involved makes every
-                    match a fresh challenge. A must-play for any baseball fan!"
-                    <br />— <em>Enthusiastic Gamer</em>
-                </blockquote>
-                <p className="text-lg leading-relaxed mb-6">
-                    These testimonials highlight the game’s unique blend of fun and
-                    strategy, setting it apart from other <strong>baseball bros</strong>{" "}
-                    titles.
-                </p>
+            {/* Advanced Strategies for Mastery */}
+            <section className="mb-8">
+                <h2
+                    className="text-2xl font-bold text-red-600 mb-4 font-cartoon"
+                >
+                    Advanced Strategies for Mastery
+                </h2>
+                <h3
+                    className="text-xl font-semibold text-red-500 mb-2 font-cartoon"
+                >
+                    Batting Techniques &amp; Strategy
+                </h3>
+                <ul className="list-disc list-inside text-gray-800 space-y-2 mb-4">
+                    <li>
+                        <span className="font-bold">Focus on timing:</span> Perfect your swing for optimal results.
+                    </li>
+                    <li>
+                        <span className="font-bold">Avoid rushing:</span> Prevent errors by not hurrying your swing.
+                    </li>
+                    <li>
+                        <span className="font-bold">Adjust based on the pitch:</span> Sometimes a well-placed hit is more effective than a desperate attempt for a home run.
+                    </li>
+                </ul>
+                <h3
+                    className="text-xl font-semibold text-red-500 mb-2 font-cartoon"
+                >
+                    Base Running Tactics
+                </h3>
+                <ul className="list-disc list-inside text-gray-800 space-y-2 mb-4">
+                    <li>
+                        <span className="font-bold">Observe carefully:</span> Watch the ball’s landing and your opponents’ positions before advancing.
+                    </li>
+                    <li>
+                        <span className="font-bold">Use sliding techniques:</span> Avoid being tagged out with smart sliding.
+                    </li>
+                    <li>
+                        <span className="font-bold">Change direction at key moments:</span> Use the spacebar to dodge defenders.
+                    </li>
+                </ul>
+                <h3
+                    className="text-xl font-semibold text-red-500 mb-2 font-cartoon"
+                >
+                    Defensive Tactics
+                </h3>
+                <ul className="list-disc list-inside text-gray-800 space-y-2 mb-4">
+                    <li>
+                        <span className="font-bold">Anticipate:</span> Move early to intercept your opponent’s shot direction.
+                    </li>
+                    <li>
+                        <span className="font-bold">Quick passes:</span> Facilitate rapid defensive transitions with precise passes.
+                    </li>
+                    <li>
+                        <span className="font-bold">Jump or dive:</span> Use dynamic moves to catch high fly balls or chase down grounders.
+                    </li>
+                </ul>
+                <h3
+                    className="text-xl font-semibold text-red-500 mb-2 font-cartoon"
+                >
+                    Mental Game &amp; Continuous Improvement
+                </h3>
+                <ul className="list-disc list-inside text-gray-800 space-y-2">
+                    <li>Stay calm and focused, even when facing tough opponents.</li>
+                    <li>Learn from your mistakes and analyze match stats to improve.</li>
+                    <li>Practice across different game modes to develop a well-rounded skill set.</li>
+                </ul>
+            </section>
 
-                {/* 常见问题 */}
-                <h2 className="text-2xl font-bold mb-4">Frequently Asked Questions (FAQ)</h2>
-                <p className="text-lg leading-relaxed mb-6">
-                    <strong>Q: Is Baseball Bros IO free to play?</strong>
-                    <br />
-                    A: Absolutely! Enjoy <strong>Baseball Bros IO</strong> directly in
-                    your browser—no downloads or installations required.
-                </p>
-                <p className="text-lg leading-relaxed mb-6">
-                    <strong>Q: How can I improve my gameplay?</strong>
-                    <br />
-                    A: Practice your timing, balance offense and defense, and experiment
-                    with different game modes to master the art of{" "}
-                    <strong>baseball bros game</strong>.
-                </p>
-                <p className="text-lg leading-relaxed mb-6">
-                    <strong>Q: Are there other Bros games available?</strong>
-                    <br />
-                    A: Yes, if you love Baseball Bros IO, be sure to check out Football
-                    Bros, Soccer Bros, and Wrestle Bros for more exciting challenges.
-                </p>
+            {/* Technical Requirements & Compatibility */}
+            <section className="mb-8">
+                <h2
+                    className="text-2xl font-bold text-red-600 mb-4 font-cartoon"
+                >
+                    Technical Requirements &amp; Compatibility
+                </h2>
+                <h3
+                    className="text-xl font-semibold text-red-500 mb-2 font-cartoon"
+                >
+                    Browser Compatibility
+                </h3>
+                <ul className="list-disc list-inside text-gray-800 space-y-2 mb-4">
+                    <li>
+                        <span className="font-bold">Best Experience:</span> Chrome is the recommended browser for full compatibility.
+                    </li>
+                    <li>
+                        <span className="font-bold">Tested Alternatives:</span> Firefox and Safari have been tested, though compatibility isn’t guaranteed 100%.
+                    </li>
+                    <li>
+                        <span className="font-bold">Always use the latest version:</span> For the best gameplay experience.
+                    </li>
+                </ul>
+                <h3
+                    className="text-xl font-semibold text-red-500 mb-2 font-cartoon"
+                >
+                    Network &amp; System Requirements
+                </h3>
+                <ul className="list-disc list-inside text-gray-800 space-y-2 mb-4">
+                    <li>A stable internet connection is crucial, especially for online multiplayer.</li>
+                    <li>Disable ad blockers to ensure all game features function properly.</li>
+                    <li>The game runs directly in your browser, requiring no downloads and minimal system resources.</li>
+                </ul>
+                <h3
+                    className="text-xl font-semibold text-red-500 mb-2 font-cartoon"
+                >
+                    Mobile Device Support
+                </h3>
+                <ul className="list-disc list-inside text-gray-800 space-y-2">
+                    <li>Enjoy improved virtual controllers on iPads and smartphones.</li>
+                    <li>The mobile version retains the core gameplay while enhancing touch controls for a seamless experience.</li>
+                </ul>
+            </section>
 
-                {/* 行动号召 */}
-                <h2 className="text-2xl font-bold mb-4">Call to Action</h2>
-                <p className="text-lg leading-relaxed mb-6">
-                    Are you ready to step up to the plate? <strong>Click to Play Now!</strong>
-                    <br />
-                    Join the growing community of baseball enthusiasts, challenge your
-                    friends, and prove your mettle in <strong>Baseball Bros IO</strong>.
-                    <br />
-                    <a
-                        href="https://baseball-game.io"
-                        className="inline-block mt-4 px-4 py-2 bg-gray-200 text-black rounded-md font-semibold hover:bg-gray-300 transition-colors"
-                    >
-                        Play Baseball Bros IO
-                    </a>
-                </p>
-                <p className="text-lg leading-relaxed">
-                    Follow us on social media for the latest updates and more thrilling
-                    games. Share your high scores and compete for the ultimate title of
-                    baseball bro!
-                </p>
+            {/* Related Games in the Bros Series */}
+            <section className="mb-8">
+                <h2
+                    className="text-2xl font-bold text-red-600 mb-4 font-cartoon"
+                >
+                    Related Games in the Bros Series
+                </h2>
+                <ul className="list-disc list-inside text-gray-800 space-y-2">
+                    <li>
+                        <span className="font-bold">Football Bros:</span> A high-energy soccer game with exhilarating multiplayer battles.
+                    </li>
+                    <li>
+                        <span className="font-bold">Basket Bros:</span> A basketball game focused on skillful plays and teamwork.
+                    </li>
+                    <li>
+                        <span className="font-bold">Soccer Bros:</span> Emphasizing passing and shooting techniques.
+                    </li>
+                    <li>
+                        <span className="font-bold">Wrestle Bros:</span> Delivering a unique, action-packed wrestling experience.
+                    </li>
+                </ul>
+            </section>
 
-                <hr className="my-8" />
-
-                <p className="text-lg leading-relaxed">
-                    Enjoy the game, and may every swing lead you to victory!
+            {/* Conclusion */}
+            <section>
+                <h2
+                    className="text-2xl font-bold text-red-600 mb-4 font-cartoon"
+                >
+                    Conclusion
+                </h2>
+                <p className="text-gray-800">
+                    With its intuitive controls, varied game modes, and entertaining gameplay, Baseball Bros IO stands out as the perfect choice for baseball fans looking for a top-tier gaming experience. Whether you’re jumping into a quick match or managing a long-term franchise, Baseball Bros IO offers lasting excitement and challenges for every player.
                 </p>
-            </div>
-        </div>
+            </section>
+        </article>
     );
 };
 

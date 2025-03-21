@@ -5,14 +5,31 @@ date: 2025-02-15
 ---
 
 import GameArea from '@components/games/GameArea';
+import GamePage from '@components/games/GamePage';
 import Article from '@components/games/Article';
-
-<GameArea 
-  title="Baseball Bros IO" 
-  votes={4328}
-  score={4.8} 
-  gameControl="" 
-  gameUrl="https://baseball-game.io/game/baseball-bros/"
-/>
-
-<Article />
+  
+<GamePage 
+    main_game={{
+    name: "Baseball Bros IO",
+    iframe_url: "https://baseball-game.io/game/baseball-bros/",
+    votes: 4328,
+    score: 4.8
+}} 
+    left_side_games={[
+    {
+        name: "Baseball Pro",
+        href: "/baseball-pro",
+        image: "/assets/images/games/baseball-pro.png"
+    }
+    ]}
+    right_side_games={[
+    {
+        name: "Baseball Kid Pitcher Cup",
+        href: "/baseball-kid-pitcher-cup",
+        image: "/assets/images/games/baseball-kid-pitcher-cup.png"
+    }
+    ]}
+    recommand_games={[
+    ]}
+    Article={Article}
+ />
