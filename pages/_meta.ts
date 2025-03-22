@@ -72,9 +72,17 @@ export default {
       layout: 'raw'
     }
   },
-  "homer-city-3d":{
+  "homer-city-3d": {
     type: 'page',
     title: 'Homer City 3D',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
+  "baseball-super": {
+    type: 'page',
+    title: 'Baseball Super',
     display: 'hidden',
     theme: {
       layout: 'raw'
