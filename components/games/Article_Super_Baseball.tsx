@@ -5,14 +5,7 @@ import React from 'react';
 const HomerCity3DIntro: React.FC = () => {
   return (
     <>
-      <Head>
-        <title>Homer City 3D: Urban Baseball Destruction</title>
-        <meta
-          name="description"
-          content="Explore Homer City 3D, a thrilling urban baseball game where precision meets destruction. Test your batting skills by breaking windows, master intuitive controls, and compete in an engaging cityscape environment."
-        />
-      </Head>
-      <div className="max-w-4xl mx-auto px-4 py-8 text-gray-800">
+      <div className="max-w-4xl mx-auto px-4 py-8">
         <header className="text-center mb-8">
           <h1 className="text-4xl font-bold mb-4">Homer City 3D</h1>
           <p className="text-xl">
@@ -20,7 +13,7 @@ const HomerCity3DIntro: React.FC = () => {
           </p>
           <div className="mt-6 flex justify-center">
             <Image
-              src="/homer-city-3d-logo.png"
+              src="/assets/images/games/homer-city-3d.png"
               alt="Homer City 3D Logo"
               width={400}
               height={200}
@@ -85,24 +78,7 @@ const HomerCity3DIntro: React.FC = () => {
               <strong>Rewarding Progression:</strong> Earn points and unlock new levels as you improve your skills.
             </li>
           </ul>
-          <div className="mt-6 flex justify-center">
-            <a
-              href="https://www.youtube.com/watch?v=example"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="https://img.youtube.com/vi/example/0.jpg"
-                alt="Homer City 3D Gameplay Video"
-                width={640}
-                height={360}
-                className="rounded-md"
-              />
-            </a>
-          </div>
-          <p className="text-center text-sm text-gray-600 mt-2">
-            Watch Homer City 3D Gameplay
-          </p>
+
         </section>
 
         <section className="mb-6">

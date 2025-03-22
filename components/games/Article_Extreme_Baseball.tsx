@@ -5,21 +5,14 @@ import React from 'react';
 const ExtremeBaseballIntro: React.FC = () => {
   return (
     <>
-      <Head>
-        <title>Extreme Baseball: A Revolutionary Twist on America's Pastime</title>
-        <meta
-          name="description"
-          content="Discover Extreme Baseball, a dynamic game that redefines traditional baseball with innovative gameplay modes, intuitive controls, and competitive strategies. Dive into the world of Extreme Baseball today!"
-        />
-      </Head>
-      <div className="max-w-4xl mx-auto px-4 py-8 text-gray-800 space-y-8">
+      <div className="max-w-4xl mx-auto px-4 py-8 space-y-8">
         {/* Header Section */}
         <header className="text-center">
           <h1 className="text-4xl font-bold mb-2">Extreme Baseball</h1>
           <p className="text-xl">A Revolutionary Twist on America's Pastime</p>
           <div className="mt-6 flex justify-center">
             <Image
-              src="/extreme-baseball-logo.png"
+              src="/assets/images/games/extreme-baseball.png"
               alt="Extreme Baseball Logo"
               width={400}
               height={200}
@@ -89,22 +82,6 @@ const ExtremeBaseballIntro: React.FC = () => {
               <strong>Dynamic Levels:</strong> Each mode offers increasing challenges to keep gameplay fresh and engaging.
             </li>
           </ul>
-          <div className="mt-6 flex justify-center">
-            <a
-              href="https://www.youtube.com/watch?v=example"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                src="https://img.youtube.com/vi/example/0.jpg"
-                alt="Extreme Baseball Gameplay Video"
-                width={640}
-                height={360}
-                className="rounded-md"
-              />
-            </a>
-          </div>
-          <p className="text-center text-sm text-gray-600 mt-2">Watch Extreme Baseball Gameplay</p>
         </section>
 
         {/* Strategies */}

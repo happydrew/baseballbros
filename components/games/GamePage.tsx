@@ -34,9 +34,11 @@ const GamePage = ({
                         {left_side_games && left_side_games.map(game => (
                             <a href={game.href}
                                 style={{ backgroundImage: `url(${game.image})` }}
-                                className="relative w-[7rem] h-[7rem] bg-center bg-cover rounded-lg hover:opacity-75 transition-opacity duration-200 ease-in-out"
+                                className="relative w-[7rem] h-[7rem] bg-center bg-cover rounded-lg transform transition duration-300 hover:scale-110"
                             >
-                                <span className="absolute w-full bottom-0 left-0 text-center font-cartoon font-bold break-words drop-shadow-[2px_2px_0px_black] text-white">{game.name}</span>
+                                <div className="absolute flex justify-center items-center w-full bottom-0 bg-gradient-to-t rounded-lg to-transparent">
+                                    <span className="leading-5 w-full text-sm text-center mb-0.5 text-white font-cartoon font-bold break-words drop-shadow-[2px_2px_0px_black]">{game.name}</span>
+                                </div>
                             </a>
                         ))}
                     </div>
@@ -50,9 +52,11 @@ const GamePage = ({
                         {right_side_games && right_side_games.map(game => (
                             <a href={game.href}
                                 style={{ backgroundImage: `url(${game.image})` }}
-                                className="relative w-[7rem] h-[7rem] bg-center bg-cover rounded-lg hover:opacity-75 transition-opacity duration-200 ease-in-out"
+                                className="relative w-[7rem] h-[7rem] bg-center bg-cover rounded-lg transform transition duration-300 hover:scale-110"
                             >
-                                <span className="absolute w-full bottom-0 left-0 text-center font-cartoon break-words drop-shadow-[2px_2px_0px_black] text-white">{game.name}</span>
+                                <div className="absolute flex justify-center items-center w-full bottom-0 bg-gradient-to-t rounded-lg to-transparent">
+                                    <span className="leading-5 w-full text-sm text-center mb-0.5 text-white font-cartoon font-bold break-words drop-shadow-[2px_2px_0px_black]">{game.name}</span>
+                                </div>
                             </a>
                         ))}
                     </div>
@@ -69,9 +73,11 @@ const GamePage = ({
                             {recommand_games && recommand_games.map(game => (
                                 <a href={game.href}
                                     style={{ backgroundImage: `url(${game.image})` }}
-                                    className="relative w-[6.5rem] h-[6.5rem] bg-center bg-cover rounded-lg hover:opacity-75 transition-opacity duration-200 ease-in-out"
+                                    className="relative w-[7rem] h-[7rem] bg-center bg-cover rounded-lg transform transition duration-300 hover:scale-110"
                                 >
-                                    <span className="absolute w-full bottom-0 left-0 text-center font-cartoon break-words drop-shadow-[2px_2px_0px_black] text-white">{game.name}</span>
+                                    <div className="absolute flex justify-center items-center w-full bottom-0 bg-gradient-to-t rounded-lg to-transparent">
+                                        <span className="leading-5 w-full text-sm text-center mb-0.5 text-white font-cartoon font-bold break-words drop-shadow-[2px_2px_0px_black]">{game.name}</span>
+                                    </div>
                                 </a>
                             ))}
                         </div>

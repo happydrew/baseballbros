@@ -1,4 +1,3 @@
-import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react';
 
@@ -93,15 +92,16 @@ const HotfootBaseballIntro: React.FC = () => {
             </li>
           </ul>
           <div className="mt-6">
-            <a href="https://www.youtube.com/watch?v=XCF-sqaIh6Y" target="_blank" rel="noopener noreferrer">
-              <Image
-                src="https://img.youtube.com/vi/XCF-sqaIh6Y/0.jpg"
-                alt="Hotfoot Baseball Gameplay Video"
-                width={640}
-                height={360}
-                className="rounded-md"
-              />
-            </a>
+            <iframe
+              width="700"
+              height="600"
+              src="https://www.youtube.com/embed/XCF-sqaIh6Y?si=AH-8xsk3yXZD4MSn"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen>
+            </iframe>
             <p className="text-center mt-2 text-sm text-gray-600">Watch Hotfoot Baseball Gameplay</p>
           </div>
         </section>

@@ -1,25 +1,11 @@
----
-title: BaseBall
-description: Experience the thrill of the Baseball game—a comprehensive simulation blending realistic gameplay, intuitive controls, innovative features, and strategic depth. Dive into the ultimate baseball experience today.
-date: 2025-02-15
----
-
-import GamePage from '@components/games/GamePage';
-import Article from '@components/games/Article_Baseball';
-  
-<GamePage 
-    main_game={{
-    name: "Baseball",
-    iframe_url: "https://games.crazygames.com/en_US/baseball/index.html?skipPrerollFirstSessionExp25=true&v=1.326",
-    votes: 5328,
-    score: 4.9
-}} 
-left_side_games={[
+[
     {
         "name": "Baseball Bros IO",
         "href": "/",
         "image": "/assets/images/games/baseball-bros-io.png"
     },
+
+
     {
         "name": "Puppet Hockey Battle",
         "href": "/puppet-hockey-battle",
@@ -39,18 +25,23 @@ left_side_games={[
         "name": "Baseball Pro",
         "href": "/baseball-pro",
         "image": "/assets/images/games/baseball-pro.png"
-    }
-    ]}
-    right_side_games={[
+    },
+    {
+        "name": "Monster Bash FRVR",
+        "href": "/monster-bash-frvr",
+        "image": "/assets/images/games/monster-bash-frvr.png"
+    },
+
+
     {
         "name": "Super Baseball",
         "href": "/super-baseball",
         "image": "/assets/images/games/super-baseball.png"
     },
     {
-        "name": "Basebrawl",
-        "href": "/basebrawl",
-        "image": "/assets/images/games/basebrawl.png"
+        "name": "Homer City 3D",
+        "href": "/homer-city-3d",
+        "image": "/assets/images/games/homer-city-3d.png"
     },
     {
         "name": "Baseball Super",
@@ -66,13 +57,13 @@ left_side_games={[
         "name": "Baseball for Clowns",
         "href": "/baseball-for-clowns",
         "image": "/assets/images/games/baseball-for-clowns.png"
-    }
-    ]}
-    recommand_games={[
+    },
+
+
     {
-        "name": "Monster Bash FRVR",
-        "href": "/monster-bash-frvr",
-        "image": "/assets/images/games/monster-bash-frvr.png"
+        "name": "Baseball",
+        "href": "/baseball",
+        "image": "/assets/images/games/baseball.png"
     },
     {
         "name": "Baseball Bat",
@@ -95,16 +86,13 @@ left_side_games={[
         "image": "/assets/images/games/baseball-league-2024.png"
     },
     {
-        "name": "Homer City 3D",
-        "href": "/homer-city-3d",
-        "image": "/assets/images/games/homer-city-3d.png"
+        "name": "Basebrawl",
+        "href": "/basebrawl",
+        "image": "/assets/images/games/basebrawl.png"
     },
     {
         "name": "Gully Baseball",
         "href": "/gully-baseball",
         "image": "/assets/images/games/gully-baseball.png"
     }
-    ]}
-
-    Article={Article}
- />
+]

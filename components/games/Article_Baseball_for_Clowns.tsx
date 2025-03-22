@@ -5,13 +5,6 @@ import React from 'react';
 const BaseballForClownsIntro: React.FC = () => {
   return (
     <>
-      <Head>
-        <title>Baseball for Clowns: A Fun & Innovative Arcade Game</title>
-        <meta
-          name="description"
-          content="Discover Baseball for Clowns, an entertaining arcade game where precision meets fun. Learn about its gameplay, intuitive controls, level challenges, and strategic ricochet mechanics."
-        />
-      </Head>
       <div className="max-w-4xl mx-auto px-4 py-8">
         <header className="text-center mb-8">
           <h1 className="text-4xl font-bold mb-4">Baseball for Clowns</h1>
@@ -20,7 +13,7 @@ const BaseballForClownsIntro: React.FC = () => {
           </p>
           <div className="mt-6 flex justify-center">
             <Image
-              src="/baseball-for-clowns-logo.png"
+              src="/assets/images/games/baseball-for-clowns.png"
               alt="Baseball for Clowns Logo"
               width={400}
               height={200}
@@ -82,20 +75,6 @@ const BaseballForClownsIntro: React.FC = () => {
               <strong>Multiplayer Mode:</strong> Challenge friends or compete online to see who can achieve the highest score.
             </li>
           </ul>
-          <div className="mt-6 flex justify-center">
-            <a href="https://www.youtube.com/watch?v=example" target="_blank" rel="noopener noreferrer">
-              <Image
-                src="https://img.youtube.com/vi/example/0.jpg"
-                alt="Baseball for Clowns Gameplay Video"
-                width={640}
-                height={360}
-                className="rounded-md"
-              />
-            </a>
-          </div>
-          <p className="text-center text-sm text-gray-600 mt-2">
-            Watch Gameplay Video
-          </p>
         </section>
 
         <section className="mb-6">

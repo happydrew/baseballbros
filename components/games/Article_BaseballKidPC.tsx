@@ -21,9 +21,9 @@ const ArticleContent: React.FC = () => {
       {/* Gameplay Screenshot */}
       <figure className="flex justify-center">
         <img
-          src="https://example.com/game-image.jpg"
+          src="/assets/images/games/baseball-kid-pitcher-cup.png"
           alt="Baseball Kid Pitcher Cup gameplay screenshot"
-          className="rounded-md shadow-md max-w-full"
+          className="rounded-md shadow-md w-96"
         />
       </figure>
 
@@ -71,13 +71,6 @@ const ArticleContent: React.FC = () => {
           >
             The Pitching Interface Breakdown
           </h3>
-          <figure className="flex justify-center">
-            <img
-              src="https://example.com/interface-breakdown.jpg"
-              alt="Pitching interface diagram"
-              className="rounded-md shadow-md max-w-full"
-            />
-          </figure>
           <p className="text-gray-800">
             Master the game's unique control scheme:
           </p>

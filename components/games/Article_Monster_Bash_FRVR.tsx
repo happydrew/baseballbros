@@ -12,7 +12,13 @@ const MonsterBashFRVRIntro: React.FC = () => {
             Experience the ultimate unblocked arcade baseball game with <strong>Monster Bash FRVR</strong>—where simple controls meet dynamic gameplay.
           </p>
         </header>
-        <Image src="/assets/images/games/monster-bash-frvr.png" className=' mb-4' alt="Monster Bash FRVR" width={400} height={200} />
+        <Image
+          src="/assets/images/games/monster-bash-frvr.png"
+          className=' mb-4'
+          alt="Monster Bash FRVR"
+          width={400}
+          height={200}
+        />
 
         <section className="mb-6">
           <h2 className="text-2xl font-semibold mb-2">Introduction</h2>

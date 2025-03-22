@@ -88,9 +88,57 @@ export default {
       layout: 'raw'
     }
   },
-  "extreme-baseball":{
+  "extreme-baseball": {
     type: 'page',
     title: 'Extreme Baseball',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
+  "baseball-hero": {
+    type: 'page',
+    title: 'Baseball Hero',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
+  "gully-baseball": {
+    type: 'page',
+    title: 'Gully Baseball',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
+  "baseball-bat": {
+    type: 'page',
+    title: 'Baseball Bat',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
+  "baseball-for-clowns": {
+    type: 'page',
+    title: 'Baseball for Clowns',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
+  "baseball-league-2024":{
+    type: 'page',
+    title: 'Baseball League 2024',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
+  "puppet-hockey-battle":{
+    type: 'page',
+    title: 'Puppet Hockey Battle',
     display: 'hidden',
     theme: {
       layout: 'raw'

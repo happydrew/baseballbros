@@ -1,5 +1,6 @@
 // components/ArticleContent.tsx
 import React from 'react';
+import Image from 'next/image';
 
 const ArticleContent: React.FC = () => {
   return (
@@ -18,13 +19,12 @@ const ArticleContent: React.FC = () => {
       </header>
 
       {/* Header Image */}
-      <figure className="flex justify-center">
-        <img
-          src="https://example.com/baseball-pro-header.jpg"
-          alt="Baseball Pro batter stance screenshot"
-          className="rounded-md shadow-md max-w-full"
-        />
-      </figure>
+      <Image
+        src="/assets/images/games/baseball-pro.png"
+        alt="Baseball Pro header image"
+        width={300}
+        height={300}
+      />
 
       {/* Game Overview Section */}
       <section className="space-y-4">
@@ -73,13 +73,6 @@ const ArticleContent: React.FC = () => {
           >
             The Art of Perfect Timing
           </h3>
-          <figure className="flex justify-center">
-            <img
-              src="https://example.com/swing-mechanics.jpg"
-              alt="Swing timing diagram"
-              className="rounded-md shadow-md max-w-full"
-            />
-          </figure>
           <p className="text-gray-800">
             Master the game&apos;s deceptively simple control scheme:
           </p>

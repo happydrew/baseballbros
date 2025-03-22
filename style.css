@@ -29,3 +29,8 @@ code.text-\[\.9em\] {
   font-size: var(--nextui-font-size-large);
   line-height: var(--nextui-line-height-large);
 }
+
+.text-stroke-yellow {
+  --webkit-text-stroke: 2px #eab308; /* 黄色描边 */
+  color: white; /* 白色填充 */
+}
