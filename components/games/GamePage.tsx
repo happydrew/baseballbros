@@ -60,7 +60,7 @@ const GamePage = ({
 
                 <div id="article_and_recommand" className="w-full flex justify-center items-start gap-10">
                     <div id="article" className="w-[48%] flex flex-col justify-center items-center gap-4 border-4 border-green-900 rounded-2xl p-2">
-                        <h2 className="font-cartoon text-yellow-500 font-bold text-2xl">About Baseball Bros IO</h2>
+                        <h2 className="font-cartoon text-yellow-500 font-bold text-2xl">About {main_game.name}</h2>
                         <Article />
                     </div>
                     <div id="recommand" className="w-[48%] flex flex-col py-2 justify-center items-center gap-4 border-4 border-green-900 rounded-2xl">

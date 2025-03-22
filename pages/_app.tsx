@@ -17,7 +17,7 @@ export default function App({ Component, pageProps }: AppProps): ReactElement {
     </Head>
 
     {/* Google tag (gtag.js)  */}
-    <Script async src="https://www.googletagmanager.com/gtag/js?id=G-MSSVTCG2PL"></Script>
+    {/* <Script async src="https://www.googletagmanager.com/gtag/js?id=G-MSSVTCG2PL"></Script>
     <Script>
       {`
       window.dataLayer = window.dataLayer || [];
@@ -26,7 +26,7 @@ export default function App({ Component, pageProps }: AppProps): ReactElement {
 
       gtag('config', 'G-MSSVTCG2PL');
       `}
-    </Script>
+    </Script> */}
 
     <Component {...pageProps} />
   </>)
