@@ -69,7 +69,7 @@ const GamePage = ({
                     </div>
                     <div id="recommand" className="w-[48%] flex flex-col py-2 justify-center items-center gap-4 border-4 border-green-900 rounded-2xl">
                         <h2 className="font-cartoon text-yellow-500 font-bold text-2xl">Recommended Games</h2>
-                        <div className="w-full flex flex-wrap justify-center items-center gap-4 px-4">
+                        <div className="w-full flex flex-wrap justify-center items-center gap-4 px-0">
                             {recommand_games && recommand_games.map(game => (
                                 <a href={game.href}
                                     style={{ backgroundImage: `url(${game.image})` }}
