@@ -88,6 +88,14 @@ export default {
       layout: 'raw'
     }
   },
+  "extreme-baseball":{
+    type: 'page',
+    title: 'Extreme Baseball',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
   // docs: {
   //   type: 'page',
   //   title: 'Documentation'
