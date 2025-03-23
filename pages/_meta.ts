@@ -128,7 +128,7 @@ export default {
       layout: 'raw'
     }
   },
-  "baseball-league-2024":{
+  "baseball-league-2024": {
     type: 'page',
     title: 'Baseball League 2024',
     display: 'hidden',
@@ -136,9 +136,33 @@ export default {
       layout: 'raw'
     }
   },
-  "puppet-hockey-battle":{
+  "puppet-hockey-battle": {
     type: 'page',
     title: 'Puppet Hockey Battle',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
+  "doodle-baseball": {
+    type: 'page',
+    title: 'Doodle Baseball',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
+  "baseball-9": {
+    type: 'page',
+    title: 'Baseball 9',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
+  "backyard-baseball": {
+    type: 'page',
+    title: 'Backyard Baseball',
     display: 'hidden',
     theme: {
       layout: 'raw'

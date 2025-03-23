@@ -1,6 +1,7 @@
 import { GameInfo } from "@lib/types";
 import GameArea from "./GameArea";
 import React from "react";
+import GameCard from "./GameCard";
 
 
 interface GamePageProps {
@@ -32,14 +33,7 @@ const GamePage = ({
                 <div id="game-region" className="w-full flex justify-center items-center gap-6 mb-14">
                     <div id="left-side" className="w-[7rem] h-full flex flex-col justify-between items-center gap-4">
                         {left_side_games && left_side_games.map(game => (
-                            <a href={game.href}
-                                style={{ backgroundImage: `url(${game.image})` }}
-                                className="relative w-[7rem] h-[7rem] bg-center bg-cover rounded-lg transform transition duration-300 hover:scale-110"
-                            >
-                                <div className="absolute flex justify-center items-center w-full bottom-0 bg-gradient-to-t rounded-lg to-transparent">
-                                    <span className="leading-5 w-full text-sm text-center mb-0.5 text-white font-cartoon font-bold break-words drop-shadow-[2px_2px_0px_black]">{game.name}</span>
-                                </div>
-                            </a>
+                            <GameCard name={game.name} href={game.href} image={game.image} />
                         ))}
                     </div>
                     <GameArea name={main_game.name}
@@ -50,14 +44,7 @@ const GamePage = ({
 
                     <div id="left-side" className="w-[7rem] h-full flex flex-col justify-center items-center gap-4">
                         {right_side_games && right_side_games.map(game => (
-                            <a href={game.href}
-                                style={{ backgroundImage: `url(${game.image})` }}
-                                className="relative w-[7rem] h-[7rem] bg-center bg-cover rounded-lg transform transition duration-300 hover:scale-110"
-                            >
-                                <div className="absolute flex justify-center items-center w-full bottom-0 bg-gradient-to-t rounded-lg to-transparent">
-                                    <span className="leading-5 w-full text-sm text-center mb-0.5 text-white font-cartoon font-bold break-words drop-shadow-[2px_2px_0px_black]">{game.name}</span>
-                                </div>
-                            </a>
+                            <GameCard name={game.name} href={game.href} image={game.image} />
                         ))}
                     </div>
                 </div>
@@ -71,14 +58,7 @@ const GamePage = ({
                         <h2 className="font-cartoon text-yellow-500 font-bold text-2xl">Recommended Games</h2>
                         <div className="w-full flex flex-wrap justify-center items-center gap-4 px-0">
                             {recommand_games && recommand_games.map(game => (
-                                <a href={game.href}
-                                    style={{ backgroundImage: `url(${game.image})` }}
-                                    className="relative w-[7rem] h-[7rem] bg-center bg-cover rounded-lg transform transition duration-300 hover:scale-110"
-                                >
-                                    <div className="absolute flex justify-center items-center w-full bottom-0 bg-gradient-to-t rounded-lg to-transparent">
-                                        <span className="leading-5 w-full text-sm text-center mb-0.5 text-white font-cartoon font-bold break-words drop-shadow-[2px_2px_0px_black]">{game.name}</span>
-                                    </div>
-                                </a>
+                                <GameCard name={game.name} href={game.href} image={game.image} />
                             ))}
                         </div>
 
