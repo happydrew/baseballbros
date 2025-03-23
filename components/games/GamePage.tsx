@@ -6,18 +6,14 @@ import GameCard from "./GameCard";
 
 interface GamePageProps {
     main_game: GameInfo;
-    left_side_games: GameInfo[];
-    right_side_games: GameInfo[];
-    recommand_games: GameInfo[];
+    relate_games: GameInfo[];
     // markdown格式的文章
     Article: React.FC;
 }
 
 const GamePage = ({
     main_game,
-    left_side_games,
-    right_side_games,
-    recommand_games,
+    relate_games,
     Article
 }: GamePageProps) => {
     return (
@@ -32,7 +28,7 @@ const GamePage = ({
 
                 <div id="game-region" className="w-full flex flex-col lg:flex-row justify-center items-center gap-6 mb-14">
                     <div id="left-side" className="order-2 lg:order-1 lg:h-full lg:flex-col flex flex-row flex-wrap justify-center items-center gap-4">
-                        {left_side_games && left_side_games.map(game => (
+                        {relate_games && relate_games.slice(0, 5).map(game => (
                             <GameCard name={game.name} href={game.href} image={game.image} />
                         ))}
                     </div>
@@ -45,7 +41,7 @@ const GamePage = ({
                     </div>
 
                     <div id="left-side" className="order-3 lg:h-full lg:flex-col flex flex-wrap justify-center items-center gap-4">
-                        {right_side_games && right_side_games.map(game => (
+                        {relate_games && relate_games.length > 5 && relate_games.slice(5, 10).map(game => (
                             <GameCard name={game.name} href={game.href} image={game.image} />
                         ))}
                     </div>
@@ -59,7 +55,7 @@ const GamePage = ({
                     <div id="recommand" className="w-full lg:w-[48%] flex flex-col py-2 justify-center items-center gap-4 border-4 border-green-900 rounded-2xl">
                         <h2 className="font-cartoon text-yellow-500 font-bold text-2xl">Recommended Games</h2>
                         <div className="w-full flex flex-wrap justify-center items-center gap-4 px-0">
-                            {recommand_games && recommand_games.map(game => (
+                            {relate_games && relate_games.length > 10 && relate_games.slice(10).map(game => (
                                 <GameCard name={game.name} href={game.href} image={game.image} />
                             ))}
                         </div>

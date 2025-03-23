@@ -168,6 +168,16 @@ export default {
       layout: 'raw'
     }
   },
+  "curve-rush": {
+    type: 'page',
+    title: 'Curve Rush',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
+
+
   // docs: {
   //   type: 'page',
   //   title: 'Documentation'
