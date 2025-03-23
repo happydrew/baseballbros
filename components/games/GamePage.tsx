@@ -30,31 +30,33 @@ const GamePage = ({
 
                 <h1 className='text-3xl font-cartoon text-yellow-500 text-center font-bold mb-2'>{main_game.name}</h1>
 
-                <div id="game-region" className="w-full flex justify-center items-center gap-6 mb-14">
-                    <div id="left-side" className="w-[7rem] h-full flex flex-col justify-between items-center gap-4">
+                <div id="game-region" className="w-full flex flex-col lg:flex-row justify-center items-center gap-6 mb-14">
+                    <div id="left-side" className="order-2 lg:order-1 lg:h-full lg:flex-col flex flex-row flex-wrap justify-center items-center gap-4">
                         {left_side_games && left_side_games.map(game => (
                             <GameCard name={game.name} href={game.href} image={game.image} />
                         ))}
                     </div>
-                    <GameArea name={main_game.name}
-                        iframe_url={main_game.iframe_url}
-                        votes={main_game.votes}
-                        score={main_game.score}
-                    />
+                    <div className="order-1 lg:order-2 flex-1 w-full lg:max-w-[60rem]">
+                        <GameArea name={main_game.name}
+                            iframe_url={main_game.iframe_url}
+                            votes={main_game.votes}
+                            score={main_game.score}
+                        />
+                    </div>
 
-                    <div id="left-side" className="w-[7rem] h-full flex flex-col justify-center items-center gap-4">
+                    <div id="left-side" className="order-3 lg:h-full lg:flex-col flex flex-wrap justify-center items-center gap-4">
                         {right_side_games && right_side_games.map(game => (
                             <GameCard name={game.name} href={game.href} image={game.image} />
                         ))}
                     </div>
                 </div>
 
-                <div id="article_and_recommand" className="w-full flex justify-center items-start gap-10">
-                    <div id="article" className="w-[48%] flex flex-col justify-center items-center gap-4 border-4 border-green-900 rounded-2xl p-2">
+                <div id="article_and_recommand" className="w-full flex flex-col lg:flex-row justify-center items-start gap-10">
+                    <div id="article" className="w-full lg:w-[48%] flex flex-col justify-center items-center gap-4 border-4 border-green-900 rounded-2xl p-2">
                         <h2 className="font-cartoon text-yellow-500 font-bold text-2xl">About {main_game.name}</h2>
                         <Article />
                     </div>
-                    <div id="recommand" className="w-[48%] flex flex-col py-2 justify-center items-center gap-4 border-4 border-green-900 rounded-2xl">
+                    <div id="recommand" className="w-full lg:w-[48%] flex flex-col py-2 justify-center items-center gap-4 border-4 border-green-900 rounded-2xl">
                         <h2 className="font-cartoon text-yellow-500 font-bold text-2xl">Recommended Games</h2>
                         <div className="w-full flex flex-wrap justify-center items-center gap-4 px-0">
                             {recommand_games && recommand_games.map(game => (

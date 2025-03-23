@@ -12,12 +12,23 @@ const GameArea: React.FC<GameInfo> = ({
     const gameIframeRef = useRef<HTMLIFrameElement>(null);
     const [isMuted, setIsMuted] = useState(false);
 
-    const handleFullscreen = () => {
+    const handleFullscreen = async () => {
         if (gameIframeRef.current) {
             if (document.fullscreenElement) {
-                document.exitFullscreen();
+                await document.exitFullscreen();
             } else {
-                gameIframeRef.current.requestFullscreen();
+                // 检测是否是移动端，并尝试锁定屏幕方向
+                // if (window.screen.orientation && /Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+                //     try {
+                //         gameIframeRef.current.style.transform = 'rotate(90deg)';
+                //         gameIframeRef.current.style.width = '100vh';
+                //         gameIframeRef.current.style.height = '100vw';
+                //         //gameIframeRef.current.style.overflow = 'hidden';
+                //     } catch (error) {
+                //         console.warn("屏幕方向锁定失败：", error);
+                //     }
+                // }
+                await gameIframeRef.current.requestFullscreen();
             }
         }
     };
@@ -39,7 +50,7 @@ const GameArea: React.FC<GameInfo> = ({
     };
 
     return (
-        <div className="w-full md:w-[60rem]">
+        <div className="w-full">
             {/* Main Game Area */}
             <div className="flex-1">
                 <div className="bg-zinc-700 rounded-lg px-2 pb-1">
@@ -67,8 +78,9 @@ const GameArea: React.FC<GameInfo> = ({
                                 ref={gameIframeRef}
                                 src={iframe_url}
                                 className="w-full h-full overflow-hidden"
-                                tabIndex={0}>
-                            </iframe>
+                                tabIndex={0}
+                                allowFullScreen
+                            />
                         </div>
                     </div>
 
