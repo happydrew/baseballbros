@@ -8,6 +8,17 @@ export default {
       layout: 'raw'
     }
   },
+  "curve-rush": {
+    type: 'page',
+    title: 'Curve Rush',
+    href: 'https://curve-rush.cc',
+  },
+  "randompokegen": {
+    type: 'page',
+    title: 'RandomPokemon',
+    href: 'https://randompokegen.cc',
+  },
+
   "baseball-kid-pitcher-cup": {
     type: 'page',
     title: 'Baseball Kid Pitcher Cup',
@@ -168,15 +179,6 @@ export default {
       layout: 'raw'
     }
   },
-  "curve-rush": {
-    type: 'page',
-    title: 'Curve Rush',
-    display: 'hidden',
-    theme: {
-      layout: 'raw'
-    }
-  },
-
 
   // docs: {
   //   type: 'page',
