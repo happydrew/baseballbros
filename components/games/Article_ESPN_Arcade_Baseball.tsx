@@ -15,7 +15,7 @@ const ESPNArcadeBaseballIntro: React.FC = () => {
           </p>
           <div className="mt-6 flex justify-center">
             <Image
-              src="/assets/images/games/espn-arcade-baseball.png"
+              src="/assets/images/games/espn-arcade-baseball.webp"
               alt="ESPN Arcade Baseball Logo"
               width={300}
               height={150}

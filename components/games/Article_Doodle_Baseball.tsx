@@ -16,7 +16,7 @@ const DoodleBaseballInfo: React.FC = () => {
       </p>
 
       <Image
-        src="/assets/images/games/doodle-baseball.png"
+        src="/assets/images/games/doodle-baseball.webp"
         alt="Doodle Baseball"
         className=" rounded-lg shadow-md mb-6"
         width={600}

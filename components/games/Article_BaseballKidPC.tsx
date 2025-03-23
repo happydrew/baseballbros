@@ -21,7 +21,7 @@ const ArticleContent: React.FC = () => {
       {/* Gameplay Screenshot */}
       <figure className="flex justify-center">
         <img
-          src="/assets/images/games/baseball-kid-pitcher-cup.png"
+          src="/assets/images/games/baseball-kid-pitcher-cup.webp"
           alt="Baseball Kid Pitcher Cup gameplay screenshot"
           className="rounded-md shadow-md w-96"
         />

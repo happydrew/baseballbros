@@ -12,7 +12,7 @@ const ExtremeBaseballIntro: React.FC = () => {
           <p className="text-xl">A Revolutionary Twist on America's Pastime</p>
           <div className="mt-6 flex justify-center">
             <Image
-              src="/assets/images/games/extreme-baseball.png"
+              src="/assets/images/games/extreme-baseball.webp"
               alt="Extreme Baseball Logo"
               width={400}
               height={200}

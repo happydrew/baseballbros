@@ -11,7 +11,7 @@ const Baseball9Info: React.FC = () => {
       </p>
 
       <img
-          src="/assets/images/games/baseball-9.png"
+          src="/assets/images/games/baseball-9.webp"
           alt="Baseball 9 Gameplay Screenshot"
           className="w-full rounded-lg shadow-md mb-4"
         />

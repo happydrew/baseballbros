@@ -8,7 +8,7 @@ const BaseBrawlIntro = () => {
       </h1>
       <div className="flex justify-center mb-6">
         <Image
-          src="/assets/images/games/basebrawl.png"
+          src="/assets/images/games/basebrawl.webp"
           alt="BaseBrawl Logo"
           width={300}
           height={150}

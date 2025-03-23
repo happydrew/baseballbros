@@ -46,7 +46,7 @@ const GullyBaseballPage = () => {
         For a visual glimpse into the game, here's a screenshot showcasing the urban setting and gameplay mechanics:
       </p>
       <div className="mb-4">
-        <Image src="/assets/images/games/gully_baseball.png" alt="Gully Baseball Gameplay" width={600} height={400} />
+        <Image src="/assets/images/games/gully_baseball.webp" alt="Gully Baseball Gameplay" width={600} height={400} />
       </div>
       <p className="mb-4">
         To see the game in action, check out this gameplay video:

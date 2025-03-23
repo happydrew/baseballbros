@@ -13,7 +13,7 @@ const MonsterBashFRVRIntro: React.FC = () => {
           </p>
         </header>
         <Image
-          src="/assets/images/games/monster-bash-frvr.png"
+          src="/assets/images/games/monster-bash-frvr.webp"
           className=' mb-4'
           alt="Monster Bash FRVR"
           width={400}

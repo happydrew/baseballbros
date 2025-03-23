@@ -43,7 +43,7 @@ const BaseballBatGame: React.FC = () => {
 
       <h2 className="text-2xl font-semibold mb-3">Visuals and Media</h2>
       <div className="mb-4">
-        <Image src="/assets/images/games/baseball-bat.png" alt="Baseball Bat Game Gameplay" width={600} height={400} className="rounded-lg" />
+        <Image src="/assets/images/games/baseball-bat.webp" alt="Baseball Bat Game Gameplay" width={600} height={400} className="rounded-lg" />
         <p className="text-center text-sm text-gray-500 mt-2">Screenshot: In-game batting scenario showcasing realistic graphics and stadium ambiance.</p>
       </div>
       <p className="mb-4">

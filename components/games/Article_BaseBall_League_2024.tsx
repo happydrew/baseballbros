@@ -5,7 +5,7 @@ const BaseballLeague2024: React.FC = () => {
     <div className="max-w-3xl mx-auto p-4">
       <h1 className="text-4xl font-bold mb-4 text-center">Baseball League 2024</h1>
       <Image
-        src="/assets/images/games/baseball-league-2024.png"
+        src="/assets/images/games/baseball-league-2024.webp"
         alt="Baseball League 2024 Cover Art"
         width={600}
         height={350}

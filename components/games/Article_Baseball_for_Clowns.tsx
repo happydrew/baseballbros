@@ -13,7 +13,7 @@ const BaseballForClownsIntro: React.FC = () => {
           </p>
           <div className="mt-6 flex justify-center">
             <Image
-              src="/assets/images/games/baseball-for-clowns.png"
+              src="/assets/images/games/baseball-for-clowns.webp"
               alt="Baseball for Clowns Logo"
               width={400}
               height={200}

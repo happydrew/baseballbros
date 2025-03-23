@@ -14,7 +14,7 @@ const HotfootBaseballIntro: React.FC = () => {
           </p>
           <div className="flex justify-center">
             <Image
-              src="/assets/images/games/hotfoot-baseball.png"
+              src="/assets/images/games/hotfoot-baseball.webp"
               alt="Hotfoot Baseball Logo"
               width={200}
               height={100}

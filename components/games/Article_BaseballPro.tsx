@@ -20,7 +20,7 @@ const ArticleContent: React.FC = () => {
 
       {/* Header Image */}
       <Image
-        src="/assets/images/games/baseball-pro.png"
+        src="/assets/images/games/baseball-pro.webp"
         alt="Baseball Pro header image"
         width={300}
         height={300}

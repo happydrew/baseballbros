@@ -11,7 +11,7 @@ const BackyardBaseballInfo: React.FC = () => {
       </p>
 
       <img
-        src="/assets/images/games/backyard-baseball.png"
+        src="/assets/images/games/backyard-baseball.webp"
         alt="Backyard Baseball Gameplay Screenshot"
         className="w-full rounded-lg shadow-md mb-6"
       />

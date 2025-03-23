@@ -12,7 +12,7 @@ const HomerCity3DIntro: React.FC = () => {
         </p>
         <div className="mt-6 flex justify-center">
           <Image
-            src="/assets/images/games/homer-city-3d.png"
+            src="/assets/images/games/homer-city-3d.webp"
             alt="Homer City 3D Logo"
             width={400}
             height={200}
