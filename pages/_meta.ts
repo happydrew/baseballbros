@@ -2,12 +2,27 @@ export default {
   index: {
     type: 'page',
     title: 'Home',
-    //display: 'hidden',
+    display: 'hidden',
     //layout: 'raw',
     theme: {
       layout: 'raw'
     }
   },
+  "basket-bros": {
+    type: 'page',
+    title: 'Basket Bros',
+    theme: {
+      layout: 'raw'
+    }
+  },
+  "football-bros": {
+    type: 'page',
+    title: 'Football Bros',
+    theme: {
+      layout: 'raw'
+    }
+  },
+
   "curve-rush": {
     type: 'page',
     title: 'Curve Rush',
@@ -179,6 +194,7 @@ export default {
       layout: 'raw'
     }
   },
+
 
   // docs: {
   //   type: 'page',
