@@ -194,14 +194,22 @@ export default {
       layout: 'raw'
     }
   },
-  // "backyard-sports-sandlot-sluggers": {
-  //   type: 'page',
-  //   title: 'Backyard Sports Sandlot Sluggers',
-  //   display: 'hidden',
-  //   theme: {
-  //     layout: 'raw'
-  //   }
-  // },
+  "backyard-sports-sandlot-sluggers": {
+    type: 'page',
+    title: 'Backyard Sports Sandlot Sluggers',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
+  "home-run-boy":{
+    type: 'page',
+    title: 'Home Run Boy',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
 
 
   // docs: {
