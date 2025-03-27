@@ -216,13 +216,13 @@ export default {
   //   type: 'page',
   //   title: 'Documentation'
   // },
-  concat: {
-    type: 'page',
-    title: 'Concat',
-    theme: {
-      layout: 'raw'
-    }
-  },
+  // concat: {
+  //   type: 'page',
+  //   title: 'Concat',
+  //   theme: {
+  //     layout: 'raw'
+  //   }
+  // },
   404: {
     type: 'page',
     theme: {
