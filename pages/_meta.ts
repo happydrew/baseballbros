@@ -194,6 +194,14 @@ export default {
       layout: 'raw'
     }
   },
+  // "backyard-sports-sandlot-sluggers": {
+  //   type: 'page',
+  //   title: 'Backyard Sports Sandlot Sluggers',
+  //   display: 'hidden',
+  //   theme: {
+  //     layout: 'raw'
+  //   }
+  // },
 
 
   // docs: {
