@@ -202,9 +202,49 @@ export default {
       layout: 'raw'
     }
   },
-  "home-run-boy":{
+  "home-run-boy": {
     type: 'page',
     title: 'Home Run Boy',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
+  "9th-inning-baseball": {
+    type: 'page',
+    title: '9th Inning Baseball',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
+  "baseball-team": {
+    type: 'page',
+    title: 'Baseball Team',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
+  "pinch-hitter-3": {
+    type: 'page',
+    title: 'Pinch Hitter 3',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
+  "diamonds-and-dreams": {
+    type: 'page',
+    title: 'Diamonds and Dreams',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
+  "stealin-home":{
+    type: 'page',
+    title: 'Stealin Home',
     display: 'hidden',
     theme: {
       layout: 'raw'
