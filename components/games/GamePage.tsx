@@ -17,7 +17,7 @@ const GamePage = ({
     Article
 }: GamePageProps) => {
     return (
-        <div className=" bg-zinc-900 p-2">
+        <div className="p-2">
             <div className="w-full">
 
                 {/* <div id='top-ads' className="flex justify-center items-center mb-6 w-full h-20 border border-zinc-700 relative">
