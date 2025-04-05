@@ -18,6 +18,9 @@ export default function App({ Component, pageProps }: AppProps): ReactElement {
       {/* Google Adsense */}
       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4907197973761221" crossOrigin="anonymous"></script>
       <meta name="google-adsense-account" content="ca-pub-4907197973761221" />
+
+      {/* clickadilla */}
+      <script async src="https://js.wpadmngr.com/static/adManager.js" data-admpid="314085"></script>
     </Head>
 
     {/* Google tag (gtag.js)  */}

@@ -11,7 +11,7 @@ const GameCard = ({
     return (
         <a href={href}
             style={{ backgroundImage: `url(${image})` }}
-            className="relative w-[7rem] h-[7rem] bg-center bg-cover rounded-lg transform transition duration-300 hover:scale-110"
+            className="relative w-[6rem] h-[6rem] bg-center bg-cover rounded-lg transform transition duration-300 hover:scale-110"
         >
             <div className="absolute flex justify-center items-center w-full bottom-0 bg-gradient-to-t rounded-lg to-transparent">
                 <span

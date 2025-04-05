@@ -25,27 +25,38 @@ const GamePage = ({
             </div> */}
 
                 <h1 className='text-3xl font-cartoon text-yellow-500 text-center font-bold mb-2'>{main_game.name}</h1>
+                <div className="w-full flex flex-col lg:flex-row justify-center items-center">
+                    <div id="left-ads" className="scale-[80%] gap-4 lg:gap-6 w-full lg:w-1/6 flex flex-col justify-center items-center border border-zinc-700 relative">
+                        <div data-banner-id="1444707"></div>
+                        <div data-banner-id="1444710"></div>
+                    </div>
+                    <div id="game-region" className="w-full lg:w-2/3 flex flex-col lg:flex-row justify-center items-center gap-6 mb-8">
+                        <div id="left-side" className="order-2 lg:order-1 lg:h-full lg:flex-col flex flex-row flex-wrap justify-center items-center gap-4">
+                            {relate_games && relate_games.slice(0, 5).map(game => (
+                                <GameCard name={game.name} href={game.href} image={game.image} />
+                            ))}
+                        </div>
+                        <div className="order-1 lg:order-2 flex-1 w-full lg:max-w-[60rem]">
+                            <GameArea name={main_game.name}
+                                iframe_url={main_game.iframe_url}
+                                votes={main_game.votes}
+                                score={main_game.score}
+                            />
+                        </div>
 
-                <div id="game-region" className="w-full flex flex-col lg:flex-row justify-center items-center gap-6 mb-14">
-                    <div id="left-side" className="order-2 lg:order-1 lg:h-full lg:flex-col flex flex-row flex-wrap justify-center items-center gap-4">
-                        {relate_games && relate_games.slice(0, 5).map(game => (
-                            <GameCard name={game.name} href={game.href} image={game.image} />
-                        ))}
+                        <div id="left-side" className="order-3 lg:h-full lg:flex-col flex flex-wrap justify-center items-center gap-4">
+                            {relate_games && relate_games.length > 5 && relate_games.slice(5, 10).map(game => (
+                                <GameCard name={game.name} href={game.href} image={game.image} />
+                            ))}
+                        </div>
                     </div>
-                    <div className="order-1 lg:order-2 flex-1 w-full lg:max-w-[60rem]">
-                        <GameArea name={main_game.name}
-                            iframe_url={main_game.iframe_url}
-                            votes={main_game.votes}
-                            score={main_game.score}
-                        />
+                    <div id="right-ads" className="scale-[80%] gap-4 lg:gap-6 w-full lg:w-1/6 flex flex-col justify-center items-center border border-zinc-700 relative">
+                        <div data-banner-id="1444711"></div>
+                        <div data-banner-id="1444712"></div>
                     </div>
 
-                    <div id="left-side" className="order-3 lg:h-full lg:flex-col flex flex-wrap justify-center items-center gap-4">
-                        {relate_games && relate_games.length > 5 && relate_games.slice(5, 10).map(game => (
-                            <GameCard name={game.name} href={game.href} image={game.image} />
-                        ))}
-                    </div>
                 </div>
+
 
                 <div id="article_and_recommand" className="w-full flex flex-col lg:flex-row justify-center items-start gap-10">
                     <div id="article" className="w-full lg:w-[48%] flex flex-col justify-center items-center gap-4 border-4 border-green-900 rounded-2xl p-2">
