@@ -30,8 +30,8 @@ const GamePage = ({
                         <div data-banner-id="1444707"></div>
                         <div data-banner-id="1444710"></div>
                     </div>
-                    <div id="game-region" className="w-full lg:w-2/3 flex flex-col lg:flex-row justify-center items-center gap-6 mb-8">
-                        <div id="left-side" className="order-2 lg:order-1 lg:h-full lg:flex-col flex flex-row flex-wrap justify-center items-center gap-4">
+                    <div id="game-region" className="w-full lg:w-2/3 flex flex-col lg:flex-row justify-center items-center gap-2 mb-8">
+                        <div id="left-side" className="order-2 lg:order-1 lg:h-full lg:flex-col flex flex-row flex-wrap justify-between items-center gap-4">
                             {relate_games && relate_games.slice(0, 5).map(game => (
                                 <GameCard name={game.name} href={game.href} image={game.image} />
                             ))}
