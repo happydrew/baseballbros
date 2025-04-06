@@ -21,10 +21,25 @@ export default function App({ Component, pageProps }: AppProps): ReactElement {
 
       {/* clickadilla */}
       <script async src="https://js.wpadmngr.com/static/adManager.js" data-admpid="314085"></script>
+
     </Head>
 
+    {/* adsterra banner */}
+    <Script type="text/javascript">
+      {`
+      atOptions = {
+        'key' : '8a7438b49174eebfc88793b361af2b7b',
+        'format' : 'iframe',
+        'height' : 600,
+        'width' : 160,
+        'params' : {}
+	    };
+    `}
+    </Script>
+    <Script type="text/javascript" src="//www.highperformanceformat.com/8a7438b49174eebfc88793b361af2b7b/invoke.js"></Script>
+
     {/* Google tag (gtag.js)  */}
-    {/* <Script async src="https://www.googletagmanager.com/gtag/js?id=G-MSSVTCG2PL"></Script>
+    <Script async src="https://www.googletagmanager.com/gtag/js?id=G-MSSVTCG2PL"></Script>
     <Script>
       {`
       window.dataLayer = window.dataLayer || [];
@@ -33,7 +48,7 @@ export default function App({ Component, pageProps }: AppProps): ReactElement {
 
       gtag('config', 'G-MSSVTCG2PL');
       `}
-    </Script> */}
+    </Script>
 
     <Component {...pageProps} />
   </>)
