@@ -33,6 +33,11 @@ export default {
     title: 'RandomPokemon',
     href: 'https://randompokegen.cc',
   },
+  "crazycattle3d": {
+    type: 'page',
+    title: 'Crazy Cattle 3D',
+    href: 'https://crazycattle3d.fun',
+  },
 
   "baseball-kid-pitcher-cup": {
     type: 'page',
@@ -242,7 +247,7 @@ export default {
       layout: 'raw'
     }
   },
-  "stealin-home":{
+  "stealin-home": {
     type: 'page',
     title: 'Stealin Home',
     display: 'hidden',
