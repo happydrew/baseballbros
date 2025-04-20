@@ -20,7 +20,7 @@ export default function App({ Component, pageProps }: AppProps): ReactElement {
       <meta name="google-adsense-account" content="ca-pub-4907197973761221" />
 
       {/* clickadilla */}
-      <script async src="https://js.wpadmngr.com/static/adManager.js" data-admpid="314085"></script>
+      {/* <script async src="https://js.wpadmngr.com/static/adManager.js" data-admpid="314085"></script> */}
 
     </Head>
 
