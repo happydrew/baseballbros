@@ -255,6 +255,14 @@ export default {
       layout: 'raw'
     }
   },
+  "zuiqiangyingyu": {
+    type: 'page',
+    title: 'zuiqiangyingyu',
+    display: 'hidden',
+    theme: {
+      layout: 'raw'
+    }
+  },
 
 
   // docs: {
